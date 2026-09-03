@@ -2,6 +2,8 @@
 
 A simple Notes Manager app I built as a DOM manipulation assignment using HTML, CSS, and JavaScript. No frameworks, no libraries — just plain JS and the DOM.
 
+🔗 **Live demo:** [https://madhwanibhumika24.github.io/Notes-Manager/](https://madhwanibhumika24.github.io/Notes-Manager/)
+
 ## What it does
 
 - Add new notes
