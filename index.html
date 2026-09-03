@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notes Manager</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-left">
+        <div class="logo">N</div>
+        <div>
+            <h1>Notes Manager</h1>
+            <p><span id="noteCount">0 notes</span></p>
+        </div>
+    </div>
+    <button class="add-btn" id="addNoteBtn">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1V14M1 7.5H14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        New Note
+    </button>
+</header>
+
+<main class="container">
+    <div class="toolbar">
+        <div class="search-box">
+            <svg class="search-icon" width="15" height="15" viewBox="0 0 15 15" fill="none"><circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.4"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            <input type="text" id="searchInput" placeholder="Search notes...">
+        </div>
+        <select id="filterSelect">
+            <option value="all">All notes</option>
+            <option value="recent">Recently added</option>
+            <option value="important">Important</option>
+        </select>
+    </div>
+
+    <section class="notes-section">
+        <div class="notes-grid" id="notesContainer"></div>
+    </section>
+</main>
+
+<div class="modal" id="noteModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 id="modalTitle">Add new note</h2>
+            <button class="close-btn" id="closeModal">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 2L14 14M14 2L2 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </button>
+        </div>
+        <label for="noteTitle">Title</label>
+        <input type="text" id="noteTitle" placeholder="Give it a name">
+        <label for="noteContent">Note</label>
+        <textarea id="noteContent" placeholder="Write your note..."></textarea>
+        <div class="modal-actions">
+            <button class="cancel-btn" id="cancelBtn">Cancel</button>
+            <button class="save-btn" id="saveNoteBtn">Save note</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
