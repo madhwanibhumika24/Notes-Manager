@@ -23,9 +23,9 @@ const noteContent = document.getElementById("noteContent");
 const searchInput = document.getElementById("searchInput");
 const filterSelect = document.getElementById("filterSelect");
 
-const starIcon = '<svg width="14" height="14" viewBox="0 0 15 15" fill="none"><path d="M7.5 1L9.4 5.2L14 5.8L10.6 8.9L11.5 13.5L7.5 11.2L3.5 13.5L4.4 8.9L1 5.8L5.6 5.2L7.5 1Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>';
-const editIcon = '<svg width="14" height="14" viewBox="0 0 15 15" fill="none"><path d="M9.5 2L13 5.5L5 13.5H1.5V10L9.5 2Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>';
-const deleteIcon = '<svg width="14" height="14" viewBox="0 0 15 15" fill="none"><path d="M2.5 4H12.5M5.5 4V2.5H9.5V4M6 6.5V11M9 6.5V11M3.5 4L4 13H11L11.5 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const starIcon = '<svg width="17" height="17" viewBox="0 0 15 15" fill="none"><path d="M7.5 1L9.4 5.2L14 5.8L10.6 8.9L11.5 13.5L7.5 11.2L3.5 13.5L4.4 8.9L1 5.8L5.6 5.2L7.5 1Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>';
+const editIcon = '<svg width="17" height="17" viewBox="0 0 15 15" fill="none"><path d="M9.5 2L13 5.5L5 13.5H1.5V10L9.5 2Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>';
+const deleteIcon = '<svg width="17" height="17" viewBox="0 0 15 15" fill="none"><path d="M2.5 4H12.5M5.5 4V2.5H9.5V4M6 6.5V11M9 6.5V11M3.5 4L4 13H11L11.5 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
 function openModal() {
     noteModal.classList.add("active");
@@ -84,7 +84,6 @@ function createNoteCard(note, accentIndex) {
 
     const dateLabel = document.createElement("span");
     dateLabel.className = "note-date";
-    dateLabel.style.marginTop = "0";
     dateLabel.textContent = formatDate(note.date);
 
     top.appendChild(dot);
